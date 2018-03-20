@@ -32,21 +32,9 @@
         <button id="addMe2">Ruby</button>
         <!-- Add 1 -->
     </div>
-
-    <div>
-        <button id="addMe3">Emerald</button>
-        <!-- Add 1 -->
-    </div>
-
-    <div>
-        <button id="addMe4">Diamond</button>
-        <!-- Add 1 -->
-    </div>
-
     <h3>Wins:
         <span id="wins-text"></span>
     </h3>
-    
     <h3>Losses:
         <span id="losses-text"></span>
     </h3>
@@ -92,14 +80,6 @@
                 counter++; $("#theCount").text(counter);
             });
 
-            $("#addMe3").click(function () {
-                counter++; $("#theCount").text(counter);
-            });
-
-            $("#addMe4").click(function () {
-                counter++; $("#theCount").text(counter);
-            });
-
 
             // $('#target').click(function () {
             //   $('#output').html(function (i, val) { return val * 1 + 1 });
@@ -108,6 +88,10 @@
             // $("#wins-text").click(function () {
             //   $("#losses-text").html(function (i, val) { return val * 1 + 1 });
             // });
+
+
+
+
 
             $("#click-me").on("click", function () {
                 wins++;

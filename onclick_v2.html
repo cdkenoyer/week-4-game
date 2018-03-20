@@ -23,15 +23,19 @@
     <h3>Target number:
         <span id="target-number"></span>
     </h3>
+    <!-- the counter -->
     <h3>Current total:
         <span id="theCount"></span>
     </h3>
 
-    <br/>
+
     <div>
-        <button id="addMe">Add 1</button>
+        <button id="addMe">Saphire</button><!-- Add 1 -->
     </div>
-    <br>
+    <div>
+        <button id="addMe2">Ruby</button><!-- Add 1 -->
+    </div>
+
     <!-- <div id="theCount"></div> -->
 
     <!-- <div>  <button id="target" type="button">Click Me</button>
@@ -44,7 +48,7 @@
         var wins = 15;
         var losses = 1;
         // var ties = 0;
-        var targetNumber = 50;
+        var targetNumber = 5;
         var counter = 0
 
         // This "document.ready" code isn't necessary in this example... but is useful to become familiar with.
@@ -63,7 +67,12 @@
             $("#losses-text").text(losses);
             // $("#ties-text").text(ties);
             $("#target-number").text(targetNumber);
+           
             $("#addMe").click(function () {
+                counter++; $("#theCount").text(counter);
+            });
+           
+            $("#addMe2").click(function () {
                 counter++; $("#theCount").text(counter);
             });
 
