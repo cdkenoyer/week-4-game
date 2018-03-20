@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+</head>
+
+<body>
+    <br/>
+    <button id="addMe">Add 1</button>
+    <br>
+    <div id="theCount"></div>
+
+
+    <script type="text/javascript">       
+
+        var counter = 0;
+
+        $(document).ready(function () {
+
+            $("#addMe").click(function () {
+                counter++; $("#theCount").text(counter);
+            });
+        });
+
+    </script>
+
+
+
+</body>

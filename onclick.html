@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Clicked</title>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Header with an id of click-me -->
+  <h3 id="click-me">CLICK ME!</h3>
+  <h3>Wins:
+    <span id="wins-text"></span>
+  </h3>
+  <h3>Losses:
+    <span id="losses-text"></span>
+  </h3>
+  <h3>Target number:
+    <span id="target-number"></span>
+  </h3>
+  <h3>Current total:
+    <span id="target-number"></span>
+  </h3>
+
+  <!-- <div>  <button id="target" type="button">Click Me</button>
+  </div>
+  <div id="output">10</div> -->
+
+  <script type="text/javascript">
+
+    // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+    var wins = 15;
+    var losses = 1;
+    // var ties = 0;
+    var targetNumber = 50;
+    var counter = 0
+
+    // This "document.ready" code isn't necessary in this example... but is useful to become familiar with.
+    // "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
+    $(document).ready(function () {
+
+      // Here we use jQuery to select the header with "click-me" as its ID.
+      // Notice I have the click, #click-me, and then the function
+      // So action, id|class|element, function
+      // And so whenever it is clicked...
+      // $("body").on("click", "#click-me", function() {
+      //   alert("I've been clicked!");
+      // });
+
+      $("#wins-text").text(wins);
+      $("#losses-text").text(losses);
+      // $("#ties-text").text(ties);
+      $("#target-number").text(targetNumber);
+
+      // $('#target').click(function () {
+      //   $('#output').html(function (i, val) { return val * 1 + 1 });
+      // });
+
+      // $("#wins-text").click(function () {
+      //   $("#losses-text").html(function (i, val) { return val * 1 + 1 });
+      // });
+
+
+
+
+      $("#click-me").on("click", function () {
+        wins++;
+
+        alert("I've been clicked!");
+      });
+
+
+
+    });
+
+  </script>
+
+</body>
+
+</html>
